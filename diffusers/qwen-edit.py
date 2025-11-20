@@ -19,7 +19,7 @@ response = requests.get(image_url)
 response.raise_for_status()
 image = Image.open(BytesIO(response.content)).convert("RGB")
 print("Image downloaded and opened")
-prompt = "Change the rabbit's color to purple, with a flash light background."
+prompt = "Convert 2D style to 3D style."
 inputs = {
     "image": image,
     "prompt": prompt,

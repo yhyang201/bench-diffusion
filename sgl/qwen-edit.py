@@ -29,7 +29,7 @@ response.raise_for_status()
 image_data = response.content
 print("Image downloaded")
 
-prompt = "Change the rabbit's color to purple, with a flash light background."
+prompt = "Convert 2D style to 3D style."
 
 times = []
 for i in range(5):
@@ -43,7 +43,7 @@ for i in range(5):
         image=image_file,
         prompt=prompt,
         n=1,
-        size="720x720",
+        size="1024x1536",
         response_format="b64_json",
     )
     end_time = time.time()
