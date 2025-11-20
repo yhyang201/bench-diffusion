@@ -4,7 +4,9 @@ import requests
 from io import BytesIO
 import base64
 import os
-from ..utils import wait_for_port
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from utils import wait_for_port
 from openai import OpenAI
 
 # Start the SGLang server
